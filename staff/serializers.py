@@ -4,7 +4,7 @@ from .models import Staff, Carrers, Postulation
 class StaffSerializer(serializers.ModelSerializer):
     class Meta:
         model = Staff
-        fields = ('id', 'name', 'departement','title','user_photo')
+        fields = ('id', 'name', 'departement','title','profile_photo')
 
 
 class CarrersSerializer(serializers.ModelSerializer):

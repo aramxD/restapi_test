@@ -10,8 +10,8 @@ from django.db import models
 class Staff(models.Model):
     name = models.CharField(max_length=100)
     departement = models.CharField(max_length=100)
-    title = models.CharField(max_length=100)
-    user_photo = models.ImageField(upload_to='media/cursos')    
+    title = models.CharField(max_length=100)   
+    profile_photo = models.URLField(blank=True) 
     timestamp = models.DateTimeField(auto_now_add=True)
     
 
