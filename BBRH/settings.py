@@ -89,11 +89,21 @@ WSGI_APPLICATION = 'BBRH.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# # HEROKU DATABASE (PRODUCTION)
+# import dj_database_url
+# from decouple import config
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL')
+#     )
+# }
+
+# HEROKU DATABASE (DEV)
 import dj_database_url
 from decouple import config
 DATABASES = {
     'default': dj_database_url.config(
-        default=config('DATABASE_URL')
+        default=env('DATABASE_URL')
     )
 }
 
