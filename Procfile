@@ -1,0 +1,1 @@
+web: gunicorn BBRH.wsgi --log-file -
