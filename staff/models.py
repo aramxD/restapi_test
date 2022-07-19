@@ -24,6 +24,6 @@ class Carrers(models.Model):
 class Postulation(models.Model):
     full_name=models.CharField(max_length=100)
     email=models.EmailField()
-    linkedin_url=models.URLField()
-    portfolio_url=models.URLField(blank=True)
+    linkedin_url=models.CharField(max_length=200)
+    portfolio_url=models.CharField(max_length=200, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
