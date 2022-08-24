@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Quimikal
+from .models import SignUp
 # Register your models here.
 
-class QuimikalAdmin(admin.ModelAdmin):
+class SignUpAdmin(admin.ModelAdmin):
     list_display=('id','name','email','contact_number', 'timestamp',)
 
 
-admin.site.register(Quimikal, QuimikalAdmin)
+admin.site.register(SignUp, SignUpAdmin)
