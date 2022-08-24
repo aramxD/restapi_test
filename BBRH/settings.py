@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'staff',
     'contact',
+    'quimikal',
     # 3rd party
     'rest_framework',
     'corsheaders',
